@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import Carousel from './Carousel'
-import './App.css';
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import Home from './Home'
 
 class App extends Component {
 
-
   render() {
     return (
-      <div>
-        <h1>SOMETHING SOMETHING DARK SIDE</h1>
-        <Carousel />
-      </div>
-       
+      <BrowserRouter>
+        <Switch>
+          <Route path='/contactus'/>
+          <Route path='/rentals'/>
+          <Route path='/' component={Home}/>
+        </Switch>
+      </BrowserRouter> 
     )
   }
 }

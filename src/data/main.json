@@ -1,0 +1,22 @@
+{
+    "homePage":{
+        "intro": "Whether you're searching for formal wear for weddings, prom, fancy events or just a night out, we've got you covered from head to toe!"
+    },
+    "tuxgear":[
+        {
+            "src": "/imgs/boystux.jpg",
+            "altText": "sl1",
+            "caption": "",
+            "header": ""
+        },
+        {
+            "src": "/imgs/KC.jpeg",
+            "altText": "sl1",
+            "caption": "",
+            "header": ""
+        }
+    ],
+    "rentals":[
+        {}
+    ]
+}

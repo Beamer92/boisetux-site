@@ -6,9 +6,71 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(0.25turn, #020708, rgb(223, 215, 215), #020708);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.home.container-fluid {
+  margin-top: 2em;
+}
+
+.carousel{
+  margin-top: 2em;
+  max-height: 100%;
+}
+
+.mainLogo {
+  max-width: 40%;
+}
+
+.title {
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.desc {
+  max-width: 50%;
+  text-align: center;
+}
+
+.col-md-6, .col-md-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  /*when not on mobile, add some space*/
+  .col-md-3.lft{
+    padding-left: 5em;
+  }
+  
+  .col-md-3.rit{
+    padding-right: 5em;
+  }
+}
+
+.link {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.dlink{
+  margin: 1em;
+  font-weight:bold;
+}
+
+.link, .dlink{
+  font-size: 2vh;
+}
+
+.link:hover {
+  color: rgb(133, 9, 9);
 }
