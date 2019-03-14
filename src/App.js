@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>TUX SHOP THING HERE</h1>
+        <h1>SOMETHING SOMETHING DARK SIDE</h1>
         <Carousel />
       </div>
        
