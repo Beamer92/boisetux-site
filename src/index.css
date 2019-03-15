@@ -18,9 +18,20 @@ code {
   margin-top: 2em;
 }
 
-.carousel{
-  margin-top: 2em;
-  max-height: 100%;
+.slider {
+  width: 15vw;
+}
+
+.slider div{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.slider div img{
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .mainLogo {
