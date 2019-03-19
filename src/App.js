@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import Home from './Home'
+import Contact from './Contact'
+import Rentals from './Rentals'
 
 class App extends Component {
 
@@ -8,8 +10,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path='/contactus'/>
-          <Route path='/rentals'/>
+          <Route path='/contactus' component={Contact}/>
+          <Route path='/rentals' component={Rentals}/>
           <Route path='/' component={Home}/>
         </Switch>
       </BrowserRouter> 

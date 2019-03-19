@@ -3,7 +3,7 @@ import Carousel from './Carousel'
 import myData from './data/main.json'
 import {Link} from 'react-router-dom'
 
-class Home extends Component{
+export default class Home extends Component{
     constructor(props){
         super(props)
         this.state = {
@@ -27,9 +27,9 @@ class Home extends Component{
             <div>
                 <div className='container-fluid home'>
                 <div className='row'>
-
                     <div className='col-md-3 lft order-2 order-md-1'>
                         <Carousel items={this.state.tuxgear} auto={true}/>
+                        <a href='http://www.tuxgear.com' className='link redir'><img src='/imgs/bowtie.png' alt='bowtie redirect to rentals' className='bowtie'></img>Shop Our Warehouse!</a>
                     </div>
 
                     <div className='col-md-6  order-md-2'>
@@ -42,21 +42,12 @@ class Home extends Component{
                     
                     <div className='col-md-3 rit order-3'>
                         <Carousel items={this.state.rentals} auto={false}/>
+                        <Link to='/rentals' className='link redir'><img src='/imgs/bowtie.png' alt='bowtie redirect to rentals' className='bowtie'></img>Interested in Renting?</Link>
                     </div>
 
                 </div>
-    
-    
-                <div className='row'>
-    
-                </div>
-    
-    
-    
                 </div>
             </div>
         )
     }  
 }
-
-export default Home

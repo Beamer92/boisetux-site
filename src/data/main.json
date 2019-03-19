@@ -2,6 +2,17 @@
     "homePage":{
         "intro": "Whether you're searching for formal wear for weddings, prom, fancy events or just a night out, we've got you covered from head to toe!"
     },
+    "contact":{
+        "about":[
+            "We're a local small business that's been providing high quality formal wear since **SOME YEAR**. Beginning as many companies do, we started serving the Treasure Valley and beyond from the owner's garage! Our love for what we do and the customers that support us allowed us to move into a bigger location in **SOME YEAR**; we've only grown bigger and better since",
+            "Come by for a visit or a fitting! Let us help you find the perfect outfits for any occasion!" 
+        ],
+        "contactInfo":{
+            "address":  "1270 E Fairview Ave Suite 120, Meridian, ID 83642",
+            "phone": "208-895-6685",
+            "email":"sales@tuxgear.com"
+        }
+    },
     "tuxgear":[
         {
             "src": "/imgs/boystux.jpg",

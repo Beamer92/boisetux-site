@@ -38,7 +38,7 @@ export default class Carousel extends Component {
     return (
       <div className='slider'>
       <Slider ref={slider => (this.slider = slider)} {...settings}>
-        {this.state.items.map(x=> <div><img src={x.src} alt={x.altText}/></div>)}
+        {this.state.items.map((x, ind)=> <div key={'caro' + ind + x.altText[0]}><img src={x.src} alt={x.altText}/></div>)}
       </Slider>
     </div>
     );
