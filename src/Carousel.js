@@ -1,22 +1,26 @@
 import React, {Component} from 'react';
-// import { UncontrolledCarousel } from 'reactstrap';
 import Slider from 'react-slick'
 
-// export default function Carousel(props){
-//   // console.log(props.items)
-//   // return(
-//   //     <UncontrolledCarousel items={props.items} pause={'hover'} /> 
-//   //   )
 
-
-// }
-
-export default class SimpleSlider extends Component {
+export default class Carousel extends Component {
   constructor(props){
     super()
 
     this.state={
-      items: props.items
+      items: props.items,
+      autoplay: props.auto
+    }
+  }
+
+  play = () => {
+    this.slider.slickPlay();
+  }
+
+  componentDidMount() {
+    if(!this.state.autoplay){
+      setTimeout(()=> {
+        this.play()
+      }, 1750)
     }
   }
 
@@ -26,11 +30,14 @@ export default class SimpleSlider extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
-    };
+      slidesToScroll: 1,
+      autoplay: this.state.autoplay,
+      autoplaySpeed: 3500
+    }
+
     return (
       <div className='slider'>
-      <Slider {...settings}>
+      <Slider ref={slider => (this.slider = slider)} {...settings}>
         {this.state.items.map(x=> <div><img src={x.src} alt={x.altText}/></div>)}
       </Slider>
     </div>

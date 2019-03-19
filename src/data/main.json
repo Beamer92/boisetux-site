@@ -5,18 +5,29 @@
     "tuxgear":[
         {
             "src": "/imgs/boystux.jpg",
-            "altText": "sl1",
-            "caption": "",
-            "header": ""
+            "altText": "Boys Maroon Dinner Jacket"
         },
         {
             "src": "/imgs/KC.jpeg",
-            "altText": "sl1",
-            "caption": "",
-            "header": ""
+            "altText": "Kenneth Cole Pic"
+        },
+        {
+            "src": "/imgs/mentux.jpg",
+            "altText": "Men's Tuxedo Jacket"
         }
     ],
     "rentals":[
-        {}
+        {
+            "src": "/imgs/menstux.jpeg",
+            "altText": "Men's Tuxedo Rental"
+        },
+        {
+            "src": "/imgs/kc2.jpeg",
+            "altText": "Kenneth Cole Pic 2"
+        },
+        {
+            "src": "/imgs/religiousgarb.jpg",
+            "altText": "Religious Formal Wear"
+        }
     ]
 }

@@ -29,7 +29,7 @@ class Home extends Component{
                 <div className='row'>
 
                     <div className='col-md-3 lft order-2 order-md-1'>
-                        <Carousel items={this.state.tuxgear}/>
+                        <Carousel items={this.state.tuxgear} auto={true}/>
                     </div>
 
                     <div className='col-md-6  order-md-2'>
@@ -41,7 +41,7 @@ class Home extends Component{
                     </div>
                     
                     <div className='col-md-3 rit order-3'>
-                        <Carousel items={this.state.rentals}/>
+                        <Carousel items={this.state.rentals} auto={false}/>
                     </div>
 
                 </div>
